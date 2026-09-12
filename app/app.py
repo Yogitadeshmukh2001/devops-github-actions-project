@@ -13,8 +13,10 @@ def health():
     return {"status": "healthy"}
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
 @app.route("/hello")
 def hello():
     return {"message": "Hello from feature branch!"}
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
